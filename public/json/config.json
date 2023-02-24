@@ -1,0 +1,22 @@
+{
+	"apiUrl_bak": "https://vsm.2bsystem.com.vn",
+	"apiUrl": "http://192.168.100.14:9595",
+	"theme": {
+		"primary": "#C62828",
+		"secondary": "#424242",
+		"accent": "#82B1FF",
+		"error": "#FF5252",
+		"info": "#2196F3",
+		"success": "#4CAF50",
+		"warning": "#FFC107"
+	},
+	"encrypt": false,
+	"azureAppId": "d435afb3-26ea-44b8-9486-ccaf133c7c56",
+	"tenantId": ["e2c6dedd-f4aa-4599-b436-e649faf0d375"],
+	"sapUrl": "https://api.vincom.com.vn/api/vcr/v1/sap-re/contract",
+    "syncWithBackend": true,
+	"rootSite": "10dd23.sharepoint.com,cfcd04a1-4b7b-46b6-81fa-f5884e4c96cb,ba657b12-b5a1-4a6b-afa8-8e9286567c9c",
+	"features": {
+		"loadByList": false
+	}
+}

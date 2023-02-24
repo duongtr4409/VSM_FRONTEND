@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bordered {
+	background: #eceff1;
+	border: 1px solid rgb(206, 206, 206);
+	min-height: 3rem;
+	/* min-width: fit-content; */
+}
+.bordered:hover {
+	background: #b3e5fc;
+	border: 1px solid #e3f2fd;
+	cursor: pointer;
+}
+.bordered-dotted {
+	border: 1px #000 dotted !important;
+}
+.bordered-dashed {
+	border: 1px #000 dashed !important;
+}
+.background-active {
+	background: #b3e5fc;
+}
+.no-decoration {
+	text-decoration: none;
+}
+
+.item {
+	cursor: pointer;
+}
+.bold {
+	font-weight: bold;
+}
+ul {
+	list-style-type: none;
+}
+
+.no-padding-top-bottom {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.padding-10 {
+	padding: 10px !important;
+}
+
+.menu-item-active {
+	background-color: #ff6262 !important;
+}
+
+.btn-color-custom {
+	color: #3dc99f;
+}
+
+.tableFont {
+	font-size: 14px !important;
+	font-weight: bold !important;
+}
+.ag-theme-alpine {
+	/* disable all borders */
+	--ag-borders: none;
+	/* then add back a border between rows */
+	--ag-borders-row: dashed 1px;
+	--ag-row-border-color: rgb(150, 150, 200);
+}
+
+.v-text-field__slot, .v-select__selections, .v-select__slot {
+	font-size: 12px !important;
+}
+
+td.text-start, th.text-start.sortable, th.text-start{
+	padding: 0 0 !important;
+	text-align: center;
+}

@@ -1,0 +1,65 @@
+{
+    "message": {
+        "hello": "Hello",
+        "field_in_eform_duplicate": "Fields in the Form cannot be the same",
+        "maxlength_required_255": "Do not enter more than 255 characters!"
+    },
+    "title": {
+        "home": "Home",
+        "account": "Account",
+        "menu": "Menu",
+        "processstep": "Process step manager",
+        "List_of_request_group": "List of request group",
+        "List_of_request_types": "List of request types",
+        "used": "Used",
+        "request_group_code": "Request group code",
+        "request_type_code": "Request type code",
+        "request_group_name": "Request group name",
+        "request_type_name": "Request type name",
+        "creater": "Người tạo",
+        "date_create": "Create Date",
+        "manipulation": "Manipulation",
+        "Are_you_sure_you_want_to_delete": "Are you sure you want to delete?",
+        "List_of_process_steps": "List of process step",
+        "description": "Description",
+        "belonging_to_the_request_group": "Belonging to the request group",
+        "Application_process": "Application process",
+        "process": "Process manager",
+        "sign_in": "Sign in",
+        "email": "Email",
+        "password": "Password"
+    },
+    "button": {
+        "create": "Create",
+        "cancel": "Cancel",
+        "save": "Save",
+        "yes": "Yes",
+        "no": "No",
+        "sign_in_client": "Sign in as guest",
+        "sign_in": "Log in",
+        "back": "Come back",
+        "send_otp": "Send OTP"
+    },
+    "label": {
+        "main_document": "Main document",
+        "user_manual": "User manual",
+        "app_portfolio": "Download on store",
+        "star": "*",
+        "sign_in_with_username": "Or login with",
+        "remember_me": "Remember me",
+        "brand_code": "Brand code",
+        "auto_increament": "Auto boost",
+        "special_value": "Special Value",
+        "default_value": "Initialization value"
+    },
+    "error": {
+        "required": "Please fill in the information",
+        "send_otp": "Executing OTP sending failed"
+    },
+    "success": {
+        "send_otp": "Send request to generate OTP code successfully. \nPlease check your inbox again."
+    },
+    "check_material_title": "Information on inspection of goods - supplies",
+    "hanoi": "Hanoi",
+    "hcm": "Ho Chi Minh"
+}
