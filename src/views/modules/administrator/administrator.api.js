@@ -1156,6 +1156,9 @@ class AdministratorAPI {
 	API_GetAllOrganizaionByRankInOrg(id) {
 		return `/api/organization/_all_rank_in_org/${id}/rank`;
 	}
+	API_GetAllProcessInfoByRequestWithRole(id) {
+		return `/api/request/${id}/_all_with_role/process-infos?ignoreField=true`
+	}
 
 }
 const administratorAPI = new AdministratorAPI();

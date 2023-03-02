@@ -269,16 +269,14 @@ export default {
 			let remove = [];
 			for (let item of this.tempRemove) {
 				let tmp = Object.assign({}, this.filteredSelected[item]);
-				//duck
-				// this.m_items.push(
-				// 	Object.assign({}, this.filteredSelected[item]),
-				// );
+				this.m_items.push(
+					Object.assign({}, this.filteredSelected[item]),
+				);
 				remove.push(tmp);
 			}
 			this.m_selected = this.m_selected.filter(
 				(e) => !remove.find((v) => v[this.keyName] == e[this.keyName]),
 			);
-			// console.log("this.m_items", this.m_items);
 			this.resetFilter();
 			this.$emit(constant.keys.update, this.m_selected);
 		},

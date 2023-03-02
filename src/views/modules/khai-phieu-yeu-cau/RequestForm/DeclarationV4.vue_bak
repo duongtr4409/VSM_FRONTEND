@@ -3340,7 +3340,7 @@ export default {
 			stepDatas: [],
 			selected: [],
 			selecteds: [],
-			dateFormat: "DD/MM/yyyy hh:mm",
+			dateFormat: "DD/MM/yyyy HH:mm",
 			// listRequestData: [],
 			list_Organizations: [],
 			listOrganizations: [],

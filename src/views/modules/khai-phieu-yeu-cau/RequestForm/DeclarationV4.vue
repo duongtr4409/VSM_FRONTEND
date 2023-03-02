@@ -312,10 +312,7 @@
 						>
 							<v-card-actions class="py-0 max-h-[2rem]">
 								<span
-									class="
-										text-black text-base
-										font-weight-bold
-									"
+									class="text-black text-base font-weight-bold"
 								>
 									{{ $t("label.information_form") }}
 								</span>
@@ -567,10 +564,7 @@
 						>
 							<v-card-actions>
 								<span
-									class="
-										text-black text-base
-										font-weight-bold
-									"
+									class="text-black text-base font-weight-bold"
 								>
 									{{ $t("label.main_document") }}
 								</span>
@@ -698,11 +692,7 @@
 								<template v-slot:[`item.fileName`]="{ item }">
 									<td>
 										<div
-											class="
-												flex
-												items-center
-												justify-between
-											"
+											class="flex items-center justify-between"
 										>
 											<span
 												v-if="
@@ -867,10 +857,7 @@
 						>
 							<v-card-actions>
 								<span
-									class="
-										text-black text-base
-										font-weight-bold
-									"
+									class="text-black text-base font-weight-bold"
 								>
 									{{ $t("label.attachments") }}
 								</span>
@@ -922,11 +909,7 @@
 								<template v-slot:[`item.fileName`]="{ item }">
 									<td>
 										<div
-											class="
-												flex
-												items-center
-												justify-between
-											"
+											class="flex items-center justify-between"
 										>
 											<span
 												v-if="
@@ -1117,10 +1100,7 @@
 						>
 							<v-card-actions>
 								<span
-									class="
-										text-black text-base
-										font-weight-bold
-									"
+									class="text-black text-base font-weight-bold"
 								>
 									{{ $t("label.exchange") }}
 								</span>
@@ -1141,11 +1121,7 @@
 									<v-tabs-items v-model="tabChat">
 										<v-tab-item key="individual">
 											<vue-perfect-scrollbar
-												class="
-													max-h-[15rem]
-													p-2
-													border-dashed border-2
-												"
+												class="max-h-[15rem] p-2 border-dashed border-2"
 												v-if="hisTrade.length > 0"
 											>
 												<span
@@ -1181,23 +1157,14 @@
 																item.content,
 															)
 														"
-														class="
-															min-w-[30rem]
-															h-[fit-content]
-															table_tiptap
-														"
+														class="min-w-[30rem] h-[fit-content] table_tiptap"
 													></span>
 												</span>
 											</vue-perfect-scrollbar>
 										</v-tab-item>
 										<v-tab-item key="customer">
 											<vue-perfect-scrollbar
-												class="
-													max-h-[15rem]
-													p-2
-													border border-solid
-													rounded
-												"
+												class="max-h-[15rem] p-2 border border-solid rounded"
 												v-if="
 													hisTradeCustomer.length > 0
 												"
@@ -1235,11 +1202,7 @@
 																item.content,
 															)
 														"
-														class="
-															min-w-[30rem]
-															h-[fit-content]
-															table_tiptap
-														"
+														class="min-w-[30rem] h-[fit-content] table_tiptap"
 													></span>
 												</span>
 											</vue-perfect-scrollbar>
@@ -1355,11 +1318,7 @@
 													small
 													v-bind="attrs"
 													v-on="on"
-													class="
-														rounded-pill
-														text-black text-base
-														ml-20
-													"
+													class="rounded-pill text-black text-base ml-20"
 												>
 													<v-icon>mdi-pencil</v-icon>
 
@@ -1378,16 +1337,7 @@
 									>
 										<v-card
 											elevation="0"
-											class="
-												grey
-												lighten-3
-												rounded-md
-												my-1
-												p-2
-												flex flex-col
-												min-h-[3rem]
-												left-[-1rem]
-											"
+											class="grey lighten-3 rounded-md my-1 p-2 flex flex-col min-h-[3rem] left-[-1rem]"
 										>
 											<span
 												:class="'font-bold'"
@@ -1488,13 +1438,7 @@
 										>
 											<template v-slot:activator>
 												<v-list-item-title
-													class="
-														text-black text-xs
-														h-[1rem]
-														p-0
-														m-0
-														ml-[-1rem]
-													"
+													class="text-black text-xs h-[1rem] p-0 m-0 ml-[-1rem]"
 													>{{
 														$t("label.history")
 													}}
@@ -1517,14 +1461,7 @@
 													>
 														<v-card
 															elevation="0"
-															class="
-																grey
-																lighten-3
-																rounded-md
-																my-1
-																flex flex-col
-																left-[-1rem]
-															"
+															class="grey lighten-3 rounded-md my-1 flex flex-col left-[-1rem]"
 														>
 															<span
 																v-if="
@@ -1621,12 +1558,7 @@
 												Bước {{ index + 1 }}
 											</v-btn>
 											<div
-												class="
-													flex
-													justify-start
-													gap-2
-													items-center
-												"
+												class="flex justify-start gap-2 items-center"
 												v-if="steep.isActive"
 											>
 												<span
@@ -1645,14 +1577,7 @@
 										<v-card
 											flat
 											elevation="0"
-											class="
-												grey
-												lighten-3
-												rounded-md
-												mt-1
-												p-2
-												min-h-[3rem]
-											"
+											class="grey lighten-3 rounded-md mt-1 p-2 min-h-[3rem]"
 										>
 											<span class="font-bold">{{
 												steep.stepDataName
@@ -1912,9 +1837,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -1942,9 +1865,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -1974,9 +1895,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2004,9 +1923,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2077,9 +1994,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-500
-																"
+																class="text-red-500"
 															>
 																{{
 																	$t(
@@ -2109,9 +2024,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2141,9 +2054,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2174,9 +2085,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2253,9 +2162,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2283,9 +2190,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2315,9 +2220,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2345,9 +2248,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2416,9 +2317,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2448,9 +2347,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2485,9 +2382,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2545,9 +2440,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-500
-																"
+																class="text-red-500"
 															>
 																{{
 																	$t(
@@ -2576,9 +2469,7 @@
 																)
 															}}
 															<span
-																class="
-																	text-red-600
-																"
+																class="text-red-600"
 															>
 																{{
 																	$t(
@@ -2705,10 +2596,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByNoidungService(
@@ -2729,10 +2617,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByQuyCachService(
@@ -2753,10 +2638,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByMaHieuService(
@@ -2777,10 +2659,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByDonViTinhService(
@@ -2801,10 +2680,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByDonGiaChuanHN(
@@ -2825,10 +2701,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByDonGiaChuanHCM(
@@ -2937,10 +2810,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByNoidungME(
@@ -2961,10 +2831,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByQuyCachME(
@@ -2985,10 +2852,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByMaHieuME(
@@ -3009,10 +2873,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByDonViTinhME(
@@ -3033,10 +2894,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByDonGiaChuanME(
@@ -3057,10 +2915,7 @@
 																"
 																outlined
 																dense
-																class="
-																	mt-2
-																	rounded-pill
-																"
+																class="mt-2 rounded-pill"
 																maxLength="255"
 																@keyup="
 																	filterByDonGiaNhanCongME(
@@ -3329,7 +3184,7 @@ export default {
 			stepDatas: [],
 			selected: [],
 			selecteds: [],
-			dateFormat: "DD/MM/yyyy hh:mm",
+			dateFormat: "DD/MM/yyyy HH:mm",
 			// listRequestData: [],
 			list_Organizations: [],
 			listOrganizations: [],
@@ -3564,18 +3419,18 @@ export default {
 			eventPage: { page: 1 },
 			editedIndex: -1,
 			filterExist: false,
-			s_noi_dung_cong_viec: "",
-			s_quy_cach_ky_thuat: "",
-			s_ma_hieu: "",
-			s_don_vi_tinh: "",
-			s_don_gia_vat_tu_vat_lieu_str: "",
-			s_don_gia_nhan_cong_str: "",
-			s_noi_dung_cong_viec_service: "",
-			s_quy_cach_ky_thuat_service: "",
-			s_ma_hieu_service: "",
-			s_don_vi_tinh_service: "",
-			s_don_gia_ha_noi_str_service: "",
-			s_don_gia_hcm_str_service: "",
+			s_noi_dung_cong_viec: null,
+			s_quy_cach_ky_thuat: null,
+			s_ma_hieu: null,
+			s_don_vi_tinh: null,
+			s_don_gia_vat_tu_vat_lieu_str: null,
+			s_don_gia_nhan_cong_str: null,
+			s_noi_dung_cong_viec_service: null,
+			s_quy_cach_ky_thuat_service: null,
+			s_ma_hieu_service: null,
+			s_don_vi_tinh_service: null,
+			s_don_gia_ha_noi_str_service: null,
+			s_don_gia_hcm_str_service: null,
 			listCargoService: [],
 			radios: null,
 			radio: 0,
@@ -4738,16 +4593,26 @@ export default {
 			this.procesHisTemps = [];
 			let isDone = false;
 			let startIndex = 0;
-			for (let i=0; i<this.requestdataProcessHis.length; i++) {
-				let processHis =  this.requestdataProcessHis[i];
+			for (let i = 0; i < this.requestdataProcessHis.length; i++) {
+				let processHis = this.requestdataProcessHis[i];
 				let procesHisTemp = Object.assign({}, processHis);
-				if (procesHisTemp.status.includes(this.$t("status.approved")) && !this.requestdataProcessHis[i + 1]?.status?.includes(this.$t("status.cancelApproval"))) {
+				if (
+					procesHisTemp.status.includes(this.$t("status.approved")) &&
+					!this.requestdataProcessHis[i + 1]?.status?.includes(
+						this.$t("status.cancelApproval"),
+					)
+				) {
 					isDone = true;
 				}
-				if (procesHisTemp.status.includes(this.$t("status.approved")) && this.requestdataProcessHis[i + 1]?.status?.includes(this.$t("status.cancelApproval"))) {
+				if (
+					procesHisTemp.status.includes(this.$t("status.approved")) &&
+					this.requestdataProcessHis[i + 1]?.status?.includes(
+						this.$t("status.cancelApproval"),
+					)
+				) {
 					isDone = false;
 				}
-				
+
 				if (processHis.isChild) {
 					if (
 						procesHisTemp.status == this.$t("status.need_process")
@@ -5519,7 +5384,7 @@ export default {
 			this.objectSchema = Object.assign({}, this.objectSchema);
 		},
 
-		getTotalPage() {
+		async getTotalPage() {
 			this.formLoading = true;
 			let pageSize = 20;
 			let m_requestDto = this.m_requestDto;
@@ -5814,26 +5679,21 @@ export default {
 								};
 							}
 							if (this.FEATURE.MATERIAL_VENDOR_CATEGORY) {
-								console.log("ele?.value",ele?.value);
 								if (
 									ele?.value == constant.id.table.ma_hieu ||
 									ele?.value ==
 										constant.id.table.don_vi_tinh ||
 									ele?.value ==
-										constant.id.table.don_gia_chuan
-										||
+										constant.id.table.don_gia_chuan ||
 									ele?.value ==
-										constant.id.table.quy_cach_ky_thuat
-										||
+										constant.id.table.quy_cach_ky_thuat ||
 									ele?.value ==
-										constant.id.table.don_gia_chuan_vt_vl
-										||
+										constant.id.table.don_gia_chuan_vt_vl ||
 									ele?.value ==
-										constant.id.table.noi_dung_cong_viec
-										||
+										constant.id.table.noi_dung_cong_viec ||
 									ele?.value ==
-										constant.id.table.don_gia_chuan_nhan_cong
-								
+										constant.id.table
+											.don_gia_chuan_nhan_cong
 								) {
 									colDef.editable = false;
 								}
@@ -6640,6 +6500,7 @@ export default {
 			}
 		},
 		async checkMaterial(tableId) {
+			await this.saveFieldDataNoFill();
 			this.dialog.check_material = true;
 			this.total_fail_value = 0;
 			this.unknown_value = 0;
@@ -6690,7 +6551,9 @@ export default {
 				this.unknown_value += " [" + unknow.join(",") + "]";
 			}
 		},
-		checkMaterialMe(tableId) {
+		async checkMaterialMe(tableId) {
+			await this.saveFieldDataNoFill();
+
 			this.dialog.check_material_me = true;
 			this.me_unknown_value = 0;
 
@@ -6831,11 +6694,14 @@ export default {
 		},
 		closeCargoService() {
 			this.openCargoService = false;
+			this.eventPage.page = 1;
 			this.clearFindCargoService();
 			//this.getAllCargoService();
 		},
 		closeCargoME() {
 			this.openCargoME = false;
+			this.eventPage.page = 1;
+
 			this.clearFindMeCargo();
 		},
 
@@ -7001,6 +6867,8 @@ export default {
 			this.selectedCargoService = [];
 			this.openCargoService = false;
 			this.radio = 0;
+			this.eventPage.page = 1;
+
 			this.clearFindCargoService();
 			this.toastSuccess(this.$t("message.successfully_added_new"));
 		},
@@ -7024,6 +6892,7 @@ export default {
 				this.objectTableId_Me.concat(this.selectedCargoME);
 			this.openCargoME = false;
 			this.selectedCargoME = [];
+			this.eventPage.page = 1;
 			this.clearFindMeCargo();
 			this.toastSuccess(this.$t("message.successfully_added_new"));
 		},
@@ -7032,12 +6901,12 @@ export default {
 			let reqBody = {
 				isDelete: "false",
 				isActive: "true",
-				noi_dung_cong_viec: this.s_noi_dung_cong_viec,
-				quy_cach_ky_thuat: this.s_quy_cach_ky_thuat,
-				ma_hieu: this.s_ma_hieu,
-				don_vi_tinh: this.s_don_vi_tinh,
-				don_gia_vat_tu_vat_lieu_str: this.s_don_gia_vat_tu_vat_lieu_str,
-				don_gia_nhan_cong_str: this.s_don_gia_nhan_cong_str,
+				noi_dung_cong_viec: this.s_noi_dung_cong_viec ? this.s_noi_dung_cong_viec : null,
+				quy_cach_ky_thuat: this.s_quy_cach_ky_thuat ? this.s_quy_cach_ky_thuat : null,
+				ma_hieu: this.s_ma_hieu ? this.s_ma_hieu : null,
+				don_vi_tinh: this.s_don_vi_tinh ? this.s_don_vi_tinh : null,
+				don_gia_vat_tu_vat_lieu_str: this.s_don_gia_vat_tu_vat_lieu_str ? this.s_don_gia_vat_tu_vat_lieu_str : null,
+				don_gia_nhan_cong_str: this.s_don_gia_nhan_cong_str ? this.s_don_gia_nhan_cong_str : null,
 			};
 			try {
 				let response = await globalService.postData_Async(
@@ -7167,12 +7036,12 @@ export default {
 			let reqBody = {
 				isDelete: "false",
 				isActive: "true",
-				noi_dung_cong_viec: this.s_noi_dung_cong_viec_service,
-				quy_cach_ky_thuat: this.s_quy_cach_ky_thuat_service,
-				ma_hieu: this.s_ma_hieu_service,
-				don_vi_tinh: this.s_don_vi_tinh_service,
-				don_gia_ha_noi_str: this.s_don_gia_ha_noi_str_service,
-				don_gia_hcm_str: this.s_don_gia_hcm_str_service,
+				noi_dung_cong_viec: this.s_noi_dung_cong_viec_service ? this.s_noi_dung_cong_viec_service : null,
+				quy_cach_ky_thuat: this.s_quy_cach_ky_thuat_service ? this.s_quy_cach_ky_thuat_service : null,
+				ma_hieu: this.s_ma_hieu_service ? this.s_ma_hieu_service : null,
+				don_vi_tinh: this.s_don_vi_tinh_service ? this.s_don_vi_tinh_service : null,
+				don_gia_ha_noi_str: this.s_don_gia_ha_noi_str_service ? this.s_don_gia_ha_noi_str_service : null,
+				don_gia_hcm_str: this.s_don_gia_hcm_str_service ? this.s_don_gia_hcm_str_service : null,
 			};
 			try {
 				let response = await globalService.postData_Async(

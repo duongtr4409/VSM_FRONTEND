@@ -64,11 +64,7 @@
 										{{ item.description }}
 									</span>
 									<div
-										class="
-											flex
-											items-center
-											justify-between
-										"
+										class="flex items-center justify-between"
 										v-if="request"
 									>
 										<span class="text-base font-medium">{{
@@ -288,7 +284,7 @@
 							dense
 							height="45px"
 							v-model="listProcessInfos"
-							:items="request.processInfos"
+							:items="processInfos_User"
 							item-text="processName"
 							clearable
 						>
@@ -410,6 +406,7 @@ export default {
 	},
 	data() {
 		return {
+			processInfos_User: [],
 			noRequestResult: false,
 			isCreate: false,
 			noResult: false,
@@ -1168,13 +1165,9 @@ export default {
 			this.toggle_request_type[index] = false;
 			//taọ request
 			this.request = item;
-			console.log("	this.request 1995", this.request);
 
-			if (item.processInfos && item.processInfos.length > 0) {
-				this.listProcessInfos = item.processInfos[0];
-			} else {
-				this.listProcessInfos = [];
-			}
+			await this.getProcessInfosUser();
+
 			let _template = await globalService.getData_Async(
 				administratorAPI.API_GetTemplateByRequestId(this.request.id),
 			);
@@ -1415,6 +1408,34 @@ export default {
 			);
 
 			if (!response || !response.state) {
+				return;
+			}
+		},
+		async getProcessInfosUser() {
+			try {
+				let response;
+				response = await globalService.getData_Async(
+					administratorAPI.API_GetAllProcessInfoByRequestWithRole(
+						this.request.id,
+					),
+				);
+				if (!response || !response.state) {
+					return [];
+				}
+
+				this.processInfos_User = response.data.filter((entry) => {
+					return !entry.isDelete && entry.isActive;
+				});
+				if (
+					this.processInfos_User &&
+					this.processInfos_User.length > 0
+				) {
+					this.listProcessInfos = this.processInfos_User[0];
+				} else {
+					this.listProcessInfos = [];
+				}
+			} catch (error) {
+				this.toastError(error);
 				return;
 			}
 		},

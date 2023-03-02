@@ -1578,7 +1578,7 @@ export default {
 			search: "",
 			singleSelect: false,
 			selected: [],
-			dateFormat: "DD/MM/yyyy h:mm",
+			dateFormat: "DD/MM/yyyy HH:mm",
 			listRequestData: [],
 			headers: [
 				{

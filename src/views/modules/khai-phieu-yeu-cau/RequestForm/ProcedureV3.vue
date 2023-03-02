@@ -643,7 +643,7 @@ export default {
 			let response;
 			try {
 				response = await globalService.getData_Async(
-					administratorAPI.API_GetRequest(
+					administratorAPI.API_GetAllProcessInfoByRequestWithRole(
 						this.m_requestDto.request.id,
 					),
 				);
@@ -651,7 +651,7 @@ export default {
 					return;
 				}
 
-				this.listProcessInfos = response.data.processInfos;
+				this.listProcessInfos = response.data;
 				
 
 				for (let item of this.listProcessInfos) {
@@ -1092,6 +1092,7 @@ export default {
 
 			// this.toastSuccess(this.$t("message.update_success"));
 		},
+		
 	},
 };
 </script>

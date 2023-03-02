@@ -109,7 +109,7 @@
 										></vue-tab>
 										<vue-select-list
 											:items="listOrganizatin"
-											keyName="?id"
+											keyName="id"
 											valueName="fullNameOrganizatin"
 											:selected="s_org"
 											@localUpdate="
@@ -634,18 +634,45 @@ export default {
 					return !entry.isDelete;
 				});
 
-				if (response.data && response.data.length) {
-					response.data.filter((entry) => {
-						entry.fullNameOrganizatin =
-							(entry?.organizationName
-								? entry?.organizationName
+				// if (response.data && response.data.length) {
+				// 	response.data.filter((entry) => {
+				// 		entry.fullNameOrganizatin =
+				// 			(entry?.organizationName
+				// 				? entry?.organizationName
+				// 				: "") +
+				// 			(entry?.orgParentName
+				// 				? " - " + entry?.orgParentName
+				// 				: "");
+				// 		if (this.listOrganizatin.indexOf(entry) != false) {
+				// 			this.listOrganizatin.push(entry);
+				// 		}
+				// 	});
+				// }
+
+				if(this.listOrganizatin){
+					this.listOrganizatin = this.listOrganizatin.map(ele => {
+						ele.fullNameOrganizatin =
+							(ele?.organizationName
+								? ele?.organizationName
 								: "") +
-							(entry?.orgParentName ?  (" - " + entry?.orgParentName) : "");
-						if (this.listOrganizatin.indexOf(entry) != false) {
-							this.listOrganizatin.push(entry);
-						}
-					});
+							(ele?.orgParentName
+								? " - " + ele?.orgParentName
+								: "");
+						return ele;
+					})
 				}
+
+
+				// console.log("s_org", this.s_org);
+
+				// if(this.m_editedItem.userInfoDTOList){
+				// 	this.m_editedItem.userInfoDTOList = this.m_editedItem.userInfoDTOList.map(ele => {
+				// 		ele.fullNameOrganizatin = (ele?.organizationName ? ele?.organizationName : "") +
+				// 			" - " +
+				// 			(ele?.orgParentName ? ele?.orgParentName : "");
+				// 		return ele;
+				// 	})
+				// }
 			} catch (error) {
 				this.toastError(error);
 			}
@@ -680,6 +707,18 @@ export default {
 					this.isLoadingUser = false;
 				} else {
 					this.isLoadingUser = true;
+				}
+
+				// custom name show
+				if (this.m_editedItem.userInfoDTOList) {
+					this.m_editedItem.userInfoDTOList =
+						this.m_editedItem.userInfoDTOList.map((ele) => {
+							ele.fullNameNEW =
+								(ele?.fullName ? ele?.fullName : "") +
+								" - " +
+								(ele?.email ? ele?.email : "");
+							return ele;
+						});
 				}
 			} catch (error) {
 				console.log(error);
@@ -954,9 +993,9 @@ export default {
 		},
 		async loadFilter() {
 			let requestArr = [];
-			try{
+			try {
 				requestArr = JSON.parse(this.m_editedItem.requestList);
-			}catch(err){
+			} catch (err) {
 				console.log(err);
 			}
 			this.s_request = [];

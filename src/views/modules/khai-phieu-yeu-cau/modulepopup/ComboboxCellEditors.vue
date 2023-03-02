@@ -12,9 +12,9 @@
 		>
 			<template v-slot:label>
 				{{ $t("label.choose_") }}
-				<span class="text-red-500">
+				<!-- <span class="text-red-500">
 					{{ $t("label.star") }}
-				</span>
+				</span> -->
 			</template>
 		</v-combobox>
 	</v-card>
